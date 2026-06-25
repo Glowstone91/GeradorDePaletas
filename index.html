@@ -43,7 +43,22 @@
     <div id="preview">
       <h2>Paleta completa</h2>
       <canvas id="canvasPaleta"></canvas>
-      <button onclick="baixar()">Baixar imagem</button>
+
+      <div id="downloadWrapper" style="position:relative;">
+        <button onclick="toggleDropdown()">Baixar imagem ▾</button>
+        <div id="dropdown"
+          style="display:none; position:absolute; bottom:110%; left:0; background:#2a2a2a; border:1px solid #444; border-radius:8px; overflow:hidden; min-width:200px;">
+          <button onclick="baixar('1px')"
+            style="width:100%; border-radius:0; background:transparent; text-align:left; border-bottom:1px solid #444;">1px
+            por cor</button>
+          <button onclick="baixar('normal')"
+            style="width:100%; border-radius:0; background:transparent; text-align:left; border-bottom:1px solid #444;">Tamanho
+            normal</button>
+          <button onclick="baixar('blend')"
+            style="width:100%; border-radius:0; background:transparent; text-align:left;">Normal com blend</button>
+        </div>
+      </div>
+
     </div>
 
   </div>
