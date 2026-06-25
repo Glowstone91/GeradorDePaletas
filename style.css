@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+.painel {
+  background: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #0005;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+#inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.corBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type=color] {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input[type=text] {
+  width: 90px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #3a3a3a;
+  color: #f0f0f0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #555;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+.corBox button {
+  background: #922;
+  padding: 8px 12px;
+}
+
+.corBox button:hover {
+  background: #d33;
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  width: 90%;
+  margin-top: 30px;
+}
+
+#paletasContainer {
+  flex: 1;
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #0005;
+}
+
+#paletas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.bloco {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+
+.cam {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+}
+
+.cam2 {
+  transform: rotate(90deg);
+  mix-blend-mode: multiply;
+}
+
+.q {
+  width: 50px;
+  height: 50px;
+}
+
+#preview {
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #0005;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#canvasPaleta {
+  border: 1px solid #444;
+}

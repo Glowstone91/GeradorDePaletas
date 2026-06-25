@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Paleta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Gerador de Paleta</h1>
+
+
+  <div class="painel">
+    <h3>Cores escolhidas</h3>
+
+    <div id="inputs">
+      <div class="corBox">
+        <input type="color" value="#ff0000">
+        <input type="text" value="#ff0000" maxlength="7">
+        <button onclick="removerCor(this)">X</button>
+      </div>
+
+      <div class="corBox">
+        <input type="color" value="#0000ff">
+        <input type="text" value="#0000ff" maxlength="7">
+        <button onclick="removerCor(this)">X</button>
+      </div>
+    </div>
+
+    <button onclick="adicionarCor()">Adicionar cor</button>
+    <button onclick="gerar()">Gerar paleta</button>
+  </div>
+
+  <div id="conteudo">
+
+    <div id="paletasContainer">
+      <h2>Combinações</h2>
+      <div id="paletas"></div>
+    </div>
+
+    <div id="preview">
+      <h2>Paleta completa</h2>
+      <canvas id="canvasPaleta"></canvas>
+      <button onclick="baixar()">Baixar imagem</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
