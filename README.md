@@ -1,1 +1,3 @@
 I created this small project with the help of ChatGPT and Claude as a quick assistant for generating color palettes, mainly for pixel art and future software design development. As I am colorblind, I have always had difficulty choosing colors that complement each other well, and I believe this tool will greatly improve and speed up my workflow.
+
+Access link: https://glowstone91.github.io/GeradorDePaletas/
