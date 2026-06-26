@@ -145,7 +145,7 @@ function criarImagem() {
     for (let j = i + 1; j < cores.length; j++)
       combos.push([cores[i], cores[j]]);
 
-  let linhasExtras = cores.length + 1;
+  let linhasExtras = cores.length;
 
   canvas.width = passos * tam;
   canvas.height = (combos.length * passos + linhasExtras) * tam;
@@ -213,7 +213,7 @@ function baixar(modo) {
     for (let j = i + 1; j < cores.length; j++)
       combos.push([cores[i], cores[j]]);
 
-  let linhasExtras = cores.length + 1;
+  let linhasExtras = cores.length ;
   let totalLinhas = combos.length * 4 + linhasExtras;
 
   let canvas = document.createElement("canvas");
@@ -266,7 +266,7 @@ function baixar(modo) {
     canvasBlur.width = canvas.width;
     canvasBlur.height = canvas.height;
     let ctxBlur = canvasBlur.getContext("2d");
-    ctxBlur.filter = "blur(15px)";
+    ctxBlur.filter = "blur(20px)";
     ctxBlur.drawImage(canvas, 0, 0);
 
     let link = document.createElement("a");
