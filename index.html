@@ -5,32 +5,38 @@
   <meta charset="UTF-8">
   <title>Gerador de Paleta</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
 </head>
 
 <body>
 
   <h1>Gerador de Paleta</h1>
-
-
   <div class="painel">
     <h3>Cores escolhidas</h3>
 
     <div id="inputs">
       <div class="corBox">
         <input type="color" value="#ff0000">
-        <input type="text" value="#ff0000" maxlength="7">
+        <input type="text" value="#FF0000" maxlength="7">
         <button onclick="removerCor(this)">X</button>
       </div>
 
       <div class="corBox">
         <input type="color" value="#0000ff">
-        <input type="text" value="#0000ff" maxlength="7">
+        <input type="text" value="#0000FF" maxlength="7">
         <button onclick="removerCor(this)">X</button>
       </div>
     </div>
 
     <button onclick="adicionarCor()">Adicionar cor</button>
     <button onclick="gerar()">Gerar paleta</button>
+
+    <div class="corBox">
+      <label>Fundo:</label>
+      <input type="color" id="corFundo" value="#ffffff">
+      <input type="text" id="hexFundo" value="#FFFFFF" maxlength="7">
+    </div>
+
   </div>
 
   <div id="conteudo">
@@ -49,11 +55,9 @@
         <div id="dropdown"
           style="display:none; position:absolute; bottom:110%; left:0; background:#2a2a2a; border:1px solid #444; border-radius:8px; overflow:hidden; min-width:200px;">
           <button onclick="baixar('1px')"
-            style="width:100%; border-radius:0; background:transparent; text-align:left; border-bottom:1px solid #444;">1px
-            por cor</button>
+            style="width:100%; border-radius:0; background:transparent; text-align:left; border-bottom:1px solid #444;">1px por cor</button>
           <button onclick="baixar('normal')"
-            style="width:100%; border-radius:0; background:transparent; text-align:left; border-bottom:1px solid #444;">Tamanho
-            normal</button>
+            style="width:100%; border-radius:0; background:transparent; text-align:left; border-bottom:1px solid #444;">Tamanho normal</button>
           <button onclick="baixar('blend')"
             style="width:100%; border-radius:0; background:transparent; text-align:left;">Normal com blend</button>
         </div>
